@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ... (o resto do seu código existente)
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const duration = 1000; // 8 segundos de animação
+    const duration = 30000; // 8 segundos de animação
     const startTime = Date.now();
     
     function createHeart() {
