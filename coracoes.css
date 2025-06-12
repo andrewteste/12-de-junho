@@ -1,7 +1,10 @@
 /* Estilos gerais */
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #4c035a;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -9,6 +12,9 @@ body {
 
 main iframe{
     margin-top:20px;
+}
+main h1{
+    color:white;
 }
 /* Estilo dos corações */
 .heart-img {
@@ -25,14 +31,26 @@ main iframe{
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
-
+.mensagem{
+    color:white;
+    text-align: center;
+    width:70%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top:40px;
+}
+.mensagem h1{
+    font-size: 1.5em;
+}
 /* Estilos do Carrossel */
 .carrossel-container {
     width: 70%;
     max-width: 250px;
     margin: 20px auto;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -58,6 +76,7 @@ main iframe{
     border-radius: 50px;
     max-width: 80%;
     margin: 0 auto;
+    margin-bottom: 20px;
     animation: pulse 2s infinite;
 }
 
