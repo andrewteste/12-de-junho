@@ -1,0 +1,68 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #4c035a;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+main iframe{
+    margin-top:20px;
+}
+/* Estilo dos corações */
+.heart-img {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    pointer-events: none;
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.5));
+    animation: floating 3s infinite ease-in-out;
+}
+
+/* Animação opcional (se quiser adicionar flutuação) */
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Estilos do Carrossel */
+.carrossel-container {
+    width: 70%;
+    max-width: 250px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+#contador-amor {
+    text-align: center;
+    font-size: 1em;
+    color: #ff4081;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255);
+    padding: 15px;
+    border-radius: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+    animation: pulse 2s infinite;
+}
+
+#contador-tempo-real {
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #d81b60;
+}
